@@ -1,0 +1,25 @@
+/*The following settings are responsible for both the light mode and dark modes*/
+body.light {
+    --background-color: #A8E6A2;
+    --text-color: #1B1B1B;
+}
+
+body.dark {
+    --background-color: #1B1B1B;
+    --text-color: #A8E6A2;
+}
+
+/*Apply these themes to the entire page*/
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+    font-family: 'VT323';
+    font-weight: 300;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}

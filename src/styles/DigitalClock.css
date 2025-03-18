@@ -1,0 +1,22 @@
+.clockContainer {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.digitalClock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75dvh;
+    gap: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.buttons {
+    border: none;
+    padding: 1dvh 1dvw;
+    cursor: pointer !important;
+    pointer-events: auto !important;
+}

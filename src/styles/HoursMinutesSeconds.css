@@ -1,0 +1,10 @@
+
+.hoursMinutesSeconds {
+    display: flex;
+    flex-direction: row;
+    gap: 2dvw;
+    font-size: 5rem;
+    align-items: center;
+    justify-content: center;
+    height: 15dvh;
+}

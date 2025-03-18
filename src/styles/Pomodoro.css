@@ -1,0 +1,151 @@
+#pageTitle {
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+}
+
+.pomodoroTimer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    gap: 5dvh;
+}
+
+.pageModules {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Left, Center, Right */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+.timerIcons {
+    background-color: transparent;
+}
+
+.timerButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5dvw;
+    font-size: 2.5rem;
+    width: 80%;
+    padding: 2dvh 0;
+    border-radius: 15px;
+}
+
+.timerButton:hover {
+    cursor: pointer;
+    color: var(--background-color);
+    background-color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.timerButton:hover .timerIcons {
+    stroke: var(--background-color);
+    transition: stroke 0.3s ease;
+}
+
+.timerModule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    gap: 3dvh;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid;
+    border-radius: 50%;
+}
+
+.startPauseModule,
+.timerSettingsModule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.startPauseModule {
+    flex-direction: column;
+    gap: 3dvh;
+}
+
+#timer {
+    font-size: 4rem;
+}
+
+#sessionType {
+font-size: 1.75rem;
+}
+
+#timer, #sessionType {
+    margin: 0;
+}
+
+.timerSettingsForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3dvh;
+}
+
+.numberInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2dvw;
+    font-size: 1.75rem;
+    width: 80%;
+}
+
+.numberInput input {
+    font-size: 2rem;
+    width: 35%;
+    text-align: center;
+    border-radius: 15px;
+}
+
+/*Media queries for default desktop application window size*/
+
+@media (max-width: 1024px) {
+    .startPauseModule{
+        scale: 0.9;
+    }
+
+    .stopwatch {
+        width: 300px;
+        height: 300px;
+        gap: 1.5dvh;
+    }
+
+    .timerSettingsForm {
+        justify-content: center;
+        align-items: center;
+        gap: 3dvh;
+    }
+
+    .numberInput {
+        flex-direction: column;
+        gap: 0.5dvh;
+    }
+
+    .numberInput input {
+        width: 80%;
+    }
+
+    .numberInput {
+        font-size: 1.5rem;
+    }
+}
